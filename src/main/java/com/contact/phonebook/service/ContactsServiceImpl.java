@@ -15,12 +15,6 @@ public class ContactsServiceImpl implements ContactsService{
 	@Autowired
 	ContactsRepo contactsRepo;
 	
-	@Override
-	public Contacts createContact(Contacts contacts) {
-		
-		return contactsRepo.save(contacts);
-		
-	}
 
 	@Override
 	public List<Contacts> getallContactsDetails() {
@@ -51,6 +45,15 @@ public class ContactsServiceImpl implements ContactsService{
 		
 		return contactsRepo.save(contacttobemodified);
 		
+		
+	}
+
+
+	@Override
+	public Contacts createContact(Contacts contacts) {
+		
+		
+		return contactsRepo.save(contacts);
 		
 	}
 

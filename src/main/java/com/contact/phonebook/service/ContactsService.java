@@ -6,10 +6,11 @@ import com.contact.phonebook.Entity.Contacts;
 
 public interface ContactsService {
 
-	Contacts createContact(Contacts contacts);
-
+	
 	List<Contacts> getallContactsDetails();
 
 	Contacts updateContactsDetail(Contacts contact, int contactid);
+
+	Contacts createContact(Contacts contacts);
 
 }
